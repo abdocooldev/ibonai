@@ -184,28 +184,28 @@
         <article class="products-section">
             <aside class="right-products">
                 <ul class="products-list flex-center">
-                    <li class="product-details flex-center active"><div class="product-image flex-center"><span><img src="./images/products/book1.png" alt="كتاب قلوب ملونة"></span></div>
+                    <li class="product-details flex-center active" data-index="0"><div class="product-image flex-center"><span><img src="./images/products/book1.png" alt="كتاب قلوب ملونة"></span></div>
                     <div class="product-text">
                         <h3 class="product-name">قلوب ملونة</h3>
                         <p class="product-description">استمتع بتلوين دفتر “يوميات خالد” ن حيث يحتوي على أعمال يقوم بها خالد يومياً </p>
                         <span class="product-price">50.00 ر.س</span>
                     </div>
                     </li>
-                    <li class="product-details flex-center"><div class="product-image flex-center"><span><img src="./images/products/book2.png" alt="كتاب صندوق الحيوانات"></span></div>
+                    <li class="product-details flex-center" data-index="1"><div class="product-image flex-center"><span><img src="./images/products/book2.png" alt="كتاب صندوق الحيوانات"></span></div>
                         <div class="product-text">
                             <h3 class="product-name">صندوق الحيوانات</h3>
                             <p class="product-description">في كل كتاب من سلسلة «صناديق فيزو» يحمل «فيزو» صندوقًا مختلفًا تخرج منه مفاجآت مدهشة،</p>
                             <span class="product-price">50.00 ر.س</span>
                         </div>
                         </li>
-                        <li class="product-details flex-center"><div class="product-image flex-center"><span><img src="./images/products/book3.png" alt="كتاب كل شيء عن المشاعر"></span></div>
+                        <li class="product-details flex-center" data-index="2"><div class="product-image flex-center"><span><img src="./images/products/book3.png" alt="كتاب كل شيء عن المشاعر"></span></div>
                             <div class="product-text">
                                 <h3 class="product-name">كل شيء عن المشاعر</h3>
                                 <p class="product-description">يا تُرى كيف تشعر هذا الصباح؟ هذه الرحلة الاستكشافية في عالم المشاعر المتنوعة</p>
                                 <span class="product-price">50.00 ر.س</span>
                             </div>
                             </li>
-                            <li class="product-details flex-center"><div class="product-image flex-center"><span><img src="./images/products/book4.png" alt="كتاب تفاحة - تفاحتان - ثلاث تفاحات"></span></div>
+                            <li class="product-details flex-center" data-index="3"><div class="product-image flex-center"><span><img src="./images/products/book4.png" alt="كتاب تفاحة - تفاحتان - ثلاث تفاحات"></span></div>
                                 <div class="product-text">
                                     <h3 class="product-name">تفاحة - تفاحتان - ثلاث تفاحات</h3>
                                     <p class="product-description">تم تصميم هذا الكتاب ليكون ملعبا واسعا يقضي فيه الطفل ووالديه أوقات ممتعة،</p>
@@ -221,13 +221,27 @@
                         <p class="product-description">استمتع بتلوين دفتر “يوميات خالد” ن حيث يحتوي على أعمال يقوم بها خالد يومياً </p>
                         <span class="product-price">50.00 ر.س</span>
                     </div>
-                    <ul class="thums flex-center">
-                        <li><img src="./images/products/thum1.png" alt=""></li>
-                        <li><img src="./images/products/thum2.png" alt=""></li>
-                        <li><img src="./images/products/thum3.png" alt=""></li>
-                        <li><img src="./images/products/thum4.png" alt=""></li>
-                        <li class="active"><img src="./images/products/thum5.png" alt=""></li>
-                    </ul>
+
+                    <div id="thums-slider" class="flex-center" data-start="0" data-end="4" data-active-index="0">
+                      <span class="prev-thum noscroll disabled">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>                        
+                      </span>
+                      <div class="thums-container">
+                        <ul class="thums flex-center">
+                          <li data-index="0" class="active"><img src="./images/products/book1.png" alt=""></li>
+                          <li data-index="1"><img src="./images/products/book2.png" alt=""></li>
+                          <li data-index="2"><img src="./images/products/book3.png" alt=""></li>
+                          <li data-index="3"><img src="./images/products/book4.png" alt=""></li>
+                          <li data-index="4"><img src="./images/products/book5.png" alt=""></li>
+                          <li data-index="5"><img src="./images/products/book6.png" alt=""></li>
+                          <li data-index="6"><img src="./images/products/book7.png" alt=""></li>
+                          <li data-index="7"><img src="./images/products/book8.png" alt=""></li>
+                      </ul>
+                    </div>
+                    <span class="next-thum">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+                    </span>
+                    </div>
                     <div class="product-btns flex-center">
                         <button aria-label="Add to Cart" class="cart flex-center"><img src="./images/icons/cart-plus.svg" alt="">اضف للسلة</button>
                         <button aria-label="Link" class="read flex-center"><img src="./images/icons/arrow-up.svg" alt="">قراءة المزيد</button>
@@ -235,14 +249,14 @@
                 </section>
             <aside class="left-products">
                 <ul class="products-list flex-center">
-                    <li class="product-details flex-center"><div class="product-image flex-center"><span><img src="./images/products/book5.png" alt="كتاب فيزو المحترم"></span></div>
+                    <li class="product-details flex-center" data-index="4"><div class="product-image flex-center"><span><img src="./images/products/book5.png" alt="كتاب فيزو المحترم"></span></div>
                         <div class="product-text">
                             <h3 class="product-name">فيزو المحترم</h3>
                             <p class="product-description">فيزو يرى أن بابا محترم جدًا لأنه يلبس بدلة وكرافاته فقرر أن يصبح محترم ولبس ملابس بابا.</p>
                             <span class="product-price">50.00 ر.س</span>
                         </div>
                         </li>
-                        <li class="product-details flex-center"><div class="product-image flex-center"><span><img src="./images/products/book6.png" alt="كتاب موسوعة للصغار جدا"></span></div>
+                        <li class="product-details flex-center" data-index="5"><div class="product-image flex-center"><span><img src="./images/products/book6.png" alt="كتاب موسوعة للصغار جدا"></span></div>
                             <div class="product-text">
                                 <h3 class="product-name">موسوعة للصغار جدا</h3>
                                 <p class="product-description">
@@ -253,14 +267,14 @@
                                 <span class="product-price">50.00 ر.س</span>
                             </div>
                             </li>
-                            <li class="product-details flex-center"><div class="product-image flex-center"><span><img src="./images/products/book7.png" alt="كتاب تعدد أشكال الحروف"></span></div>
+                            <li class="product-details flex-center" data-index="6"><div class="product-image flex-center"><span><img src="./images/products/book7.png" alt="كتاب تعدد أشكال الحروف"></span></div>
                                 <div class="product-text">
                                     <h3 class="product-name">تعدد أشكال الحروف</h3>
                                     <p class="product-description">سلسلة منهجية مبنية على أسس علمية، فبالإضافة إلى تدريب الطفل على المحاكاة</p>
                                     <span class="product-price">50.00 ر.س</span>
                                 </div>
                                 </li>
-                                <li class="product-details flex-center"><div class="product-image flex-center"><span><img src="./images/products/book8.png" alt="كتاب صندوق الأرقام"></span></div>
+                                <li class="product-details flex-center" data-index="7"><div class="product-image flex-center"><span><img src="./images/products/book8.png" alt="كتاب صندوق الأرقام"></span></div>
                                     <div class="product-text">
                                         <h3 class="product-name">صندوق الأرقام</h3>
                                         <p class="product-description">في كل كتاب من سلسلة «صناديق فيزو» يحمل «فيزو» صندوقًا مختلفًا تخرج منه مفاجآت مدهشة</p>
